@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="net.colors_wind.compiler.ui.MainUI">
+  <grid id="27dc6" binding="topPanel" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="943" height="635"/>
+    </constraints>
+    <properties>
+      <focusTraversalPolicyProvider value="true"/>
+      <inheritsPopupMenu value="true"/>
+      <minimumSize width="600" height="400"/>
+      <preferredSize width="800" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="f010f" layout-manager="GridBagLayout">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="97b18" class="javax.swing.JButton" binding="lexButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="14"/>
+              <label value="词法分析"/>
+              <text value="词法分析"/>
+            </properties>
+          </component>
+          <hspacer id="fe504">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </hspacer>
+          <vspacer id="9fa3d">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </vspacer>
+          <component id="62b1" class="javax.swing.JButton" binding="icodeButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="14"/>
+              <text value="语法分析"/>
+            </properties>
+          </component>
+          <component id="f81d6" class="javax.swing.JButton" binding="resetButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="14"/>
+              <text value="清空结果"/>
+            </properties>
+          </component>
+          <hspacer id="cd821">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </hspacer>
+          <component id="b6c7b" class="javax.swing.JButton" binding="pasteButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font size="14"/>
+              <text value="粘结源代码"/>
+            </properties>
+          </component>
+          <component id="5a5ac" class="javax.swing.JButton" binding="copyButton">
+            <constraints>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <actionCommand value=""/>
+              <font size="14"/>
+              <text value="复制结果"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <splitpane id="d8f34">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="4a3e7">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="6eb64" class="javax.swing.JList" binding="outputList">
+                <constraints/>
+                <properties>
+                  <font size="18"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="6acdb">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties>
+              <preferredSize width="400" height="250"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="9a288" class="javax.swing.JTextArea" binding="inputArea">
+                <constraints/>
+                <properties>
+                  <font size="18"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </splitpane>
+    </children>
+  </grid>
+</form>
